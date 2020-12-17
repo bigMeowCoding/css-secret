@@ -1,5 +1,44 @@
-div{
-  width:200px;
-  height:200px;
-  background: red;
+.ball {
+  width: 0;
+  height: 0;
+  padding: 1.5em;
+  border-radius: 50%;
+  margin: auto;
+  background: red radial-gradient(at 30% 30%, #fdd, red);
+  animation: bounce 3s ease-in;
+  //animation: bounce 3s cubic-bezier(.1,.25,1,.25) infinite;
+
+}
+@keyframes bounce {
+  60%,
+  80%,
+  to {
+    transform: translateY(350px);
+    animation-timing-function: ease-out;
+
+    //animation-timing-function: ease;
+  }
+  70% {
+    transform: translateY(250px);
+  }
+  90% {
+    transform: translateY(300px);
+  }
+}
+@keyframes move {
+  to {
+    transform: translateX(500px);
+  }
+}
+.box1,.box2 {
+  width:50px;
+  height:50px;
+  animation: move 3s ease-in infinite;
+}
+.box1{
+  background: yellow;
+}
+.box2 {
+  background: pink;
+  animation-timing-function: ease-out;
 }
