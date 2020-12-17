@@ -1,0 +1,21 @@
+.blink-smooth {
+  animation:1s blink infinite;
+}
+.blink-smooth-alternative {
+  animation:1s blink-2 infinite;
+}
+.blink-smooth-step {
+  //animation:1s blink-1 3 steps(1,end);
+}
+@keyframes blink {
+  50% {
+    color:transparent;
+  }
+}
+
+@keyframes blink-2 {
+  to {
+    color:transparent;
+  }
+}
+
