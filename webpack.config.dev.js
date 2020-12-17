@@ -15,7 +15,7 @@ module.exports = Object.assign({}, config, {
   plugins: [
     ...plugins,
     new HtmlWebpackPlugin({
-      template: "./example/animation/example4.html",
+      template: "./example/animation/example6.html",
     }),
   ],
 });

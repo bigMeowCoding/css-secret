@@ -1,0 +1,13 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-image: url("./1.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  animation:  smooth 5s linear infinite alternate;
+}
+@keyframes smooth {
+  to {
+    background-position: 100% 0;
+  }
+}
